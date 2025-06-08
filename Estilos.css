@@ -1,5 +1,5 @@
 h1 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
   font-size: 50px;
 }
 
@@ -109,6 +109,7 @@ figure img {
   max-width: 100%;
   height: auto;
   border-radius: 8px; /* Bordes redondeados para imágenes */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
 
@@ -126,7 +127,128 @@ button{
   border-radius: 10px;
 }
 
+/* Estilos para la biografía del autor */
+.biografia {
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 100px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.contenidoBiografia {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.imagenBiografia {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2e8b2e;
+}
+
+.textoBiografia h3 {
+  color: #1a5a1a;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.textoBiografia p {
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Contenedor para las tarjetas */
+.tarjetas-contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+/* Estilos para la tarjeta de información */
+.boton-info {
+  background: linear-gradient(135deg, #1a5a1a, #3a9e3a);
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px; /* Ancho fijo para consistencia */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #2e8b2e;
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
+  color: yellow;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Animación hover solo para dispositivos con hover (no afecta lectores) */
+@media (hover: hover) and (pointer: fine) {
+  .boton-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+}
+
+.boton-info img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px; /* Altura fija para consistencia */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.boton-info p {
+  margin: 10px 0 15px;
+  flex-grow: 1;
+}
+
+.boton-info button {
+  margin-top: auto;
+  padding: 10px 20px;
+  background-color: #2a4e0e;
+  color: yellow;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.boton-info button:hover {
+  background-color: #3a9e3a;
+}
+
 @media (max-width: 768px) {
+  h1{
+    font-size: 15px;
+  }
+
+  h2{
+    font-size: 15px;
+    text-align: left;
+  }
+
+  body{
+    font-size: 10px;
+  }
+
+  main{
+    padding: 10px;
+    margin: 0 10px;
+  }
+
   .navbar ul {
     display: none;
     flex-direction: column;
@@ -143,5 +265,48 @@ button{
 
   main {
     margin: 0 20px; /* Menos margen en móviles */
+  }
+
+  .biografia {
+    margin: 20px 10px;
+  }
+  
+  .contenidoBiografia {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .imagenBiografia {
+    width: 80px;
+    height: 80px;
+  }
+
+  .boton-info {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+  
+  .boton-info img {
+    max-width: 200px;
+  }
+  
+  .boton-info p {
+    font-size: 0.9rem;
+  }
+
+  .tarjetas-contenedor {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .boton-info {
+    width: 90%;
+    max-width: 350px;
+    margin: 0;
+  }
+  
+  .boton-info img {
+    height: 150px;
   }
 }

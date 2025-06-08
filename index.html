@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cerro de Macuiltepetl</title>
-  <link rel="stylesheet" href="Estilos.css"/>
+  <link rel="stylesheet" href="Estilos.css" />
 </head>
+
 <body>
   <header class="navbar" role="banner" aria-label="Cabecera de la página">
     <a href="index.html">
-      <img src="imagenes/logoDelCerroDeMacuiltepetl.png" alt="Logo del cerro de Macuiltepetl" class="logo"/>
+      <img src="imagenes/logoDelCerroDeMacuiltepetl.png" alt="Logo del cerro de Macuiltepetl" class="logo" />
     </a>
     <button class="menu-toggle" aria-label="Mostrar menú" aria-expanded="false" onclick="desplegarMenu()">☰</button>
     <nav role="navigation" aria-label="Menú principal">
@@ -25,29 +27,65 @@
     <h1>Cerro de Macuiltepetl</h1>
 
     <figure>
-      <img src="imagenes/cerro1.png" alt="Vista aérea del cerro de Macuiltepetl">
+      <img src="imagenes/cerro1.png" alt="Vista aérea del cerro de Macuiltepetl" title="El cerro de Macuiltepetl">
       <figcaption>Vista aérea del cerro de Macuiltepetl</figcaption>
     </figure>
 
-    <p>El cerro de Macuiltepetl es un volcán extinto que hizo erupción hace más de 30 mil años, hoy en día, es un área natural protegida ubicada en la Colonia Progreso Macuiltepetl, Xalapa, Veracruz, México.<br></p>
-    
-    <p>Se considera como un lugar de recreación para los Xalapeños, ya que a día de hoy cuenta con lugares para la recreación con toda la familia, que van desde una zona de parrillas, hasta una zona de juegos y aparatos deportivos</p>
+    <p>El cerro de Macuiltepetl es un volcán extinto que hizo erupción hace más de 30 mil años, hoy en día, es un área
+      natural protegida ubicada en la Colonia Progreso Macuiltepetl, Xalapa, Veracruz, México.<br></p>
 
-    <p>El cerro de Macuiltepetl también es sede de una variedad de eventos deportivos, ya que este cuenta con una pista de concreto y una pista de tierra que tiene un recorrido mucho más largo.</p>
+    <p>Se considera como un lugar de recreación para los Xalapeños, ya que a día de hoy cuenta con lugares para la
+      recreación con toda la familia, que van desde una zona de parrillas, hasta una zona de juegos y aparatos
+      deportivos</p>
 
-    <p>Se considera como (A) C (fm) Semicálido-húmedo: temperatura media anual entre 18 y 22 grados centígrados y la del mes más frío inferior a 18 grados centígrados. La lluvia es abundante en todo el año, teniendo el mes más seco una precipitación mayor a 40 mm y en el porciento de lluvia invernal es menor a 18.</p>
+    <p>El cerro de Macuiltepetl también es sede de una variedad de eventos deportivos, ya que este cuenta con una pista
+      de concreto y una pista de tierra que tiene un recorrido mucho más largo.</p>
 
-  <h2>Conoce más sobre el cerro de Macuiltepetl</h2>
+    <p>Se considera como (A) C (fm) Semicálido-húmedo: temperatura media anual entre 18 y 22 grados centígrados y la del
+      mes más frío inferior a 18 grados centígrados. La lluvia es abundante en todo el año, teniendo el mes más seco una
+      precipitación mayor a 40 mm y en el porciento de lluvia invernal es menor a 18.</p>
 
-  <button>Flora</button>
-  <button>Fauna</button>
-    
+    <h2>Conoce más sobre el cerro de Macuiltepetl</h2>
+
+    <div class="tarjetas-contenedor">
+
+       <div class="boton-info">
+        <img src="imagenes/acahual.jpg" alt="Acahual, vegetación típica del cerro" title="Flora del cerro">
+        <p>Descubre la variedad de flora del cerro de Macuiltepetl</p>
+        <button title="Clic en el botón para ver la página de flora">Ver más sobre la flora</button>
+      </div>
+
+      <div class="boton-info">
+        <img src="imagenes/cacomixtle.jpg" alt="Cacomixtle, especie de fauna del cerro" title="Fauna del cerro">
+        <p>Explora la diversidad de fauna del cerro de Macuiltepetl</p>
+        <button title="Clic en el botón para ver la página de fauna">Ver más sobre la fauna</button>
+      </div>
+     
+    </div>
+
   </main>
 
+  <aside class="biografia">
+    <div class="contenidoBiografia">
+      <img src="imagenes/ned.png" alt="Foto de perfil de gatitoned" class="imagenBiografia" title="El autor :o">
+      <div class="textoBiografia">
+        <h3>gatitoned</h3>
+        <p>Hola, soy gatitoned, recabo información sobre las áreas naturales protegidas de México, actualmente estoy
+          realizando investigaciones con instituciones educativas para llevar mis conocimientos a los estudiantes y
+          motivarlos a integrarse en el mundo de la investigación.</p>
+      </div>
+    </div>
+  </aside>
+
   <footer>
-    <address>jeshuayam</address>
+    <address>
+      <p>Cerro de Macuiltepetl, Xalapa, Veracruz, México</p>
+      <p>Email: <a href="mailto:contacto@macuiltepetl.org">contacto@macuiltepetl.org</a></p>
+      <p>Teléfono: <a href="tel:+522282000000">228 200 0000</a></p>
+    </address>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
