@@ -1,11 +1,11 @@
 h1 {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 50px;
   border-bottom: 2px solid #2e8b2e;
   padding: 10px;
 }
 
-h2{
+h2 {
   padding: 10px;
   border-bottom: 2px solid #2e8b2e;
 }
@@ -17,22 +17,24 @@ body {
   /* Degradado vertical de verde oscuro a verde más claro */
   background: linear-gradient(to bottom, #2a4e0e, #4a7a1f);
   padding-top: 70px;
-  min-height: 100vh; /* Asegura que el degradado cubra toda la pantalla */
+  min-height: 100vh;
+  /* Asegura que el degradado cubra toda la pantalla */
 }
 
 
-main{
+main {
   border-radius: 10px;
   background-color: white;
   padding: 20px;
   margin: 0 100px;
   animation: fadeIn 0.6s ease-out forwards;
   opacity: 0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para mejor contraste */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra suave para mejor contraste */
 }
 
 
-footer{
+footer {
   margin-top: 20px;
   /* Degradado diagonal que combina con la navbar */
   background: linear-gradient(135deg, #1e7a1e, #3a9e3a);
@@ -42,11 +44,11 @@ footer{
 }
 
 .navbar {
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; 
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,7 +57,8 @@ footer{
   background: linear-gradient(to right, #1a5a1a, #2e8b2e);
   color: yellow;
   padding: 0.5rem 1rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2); /* Sombra para profundidad */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  /* Sombra para profundidad */
 }
 
 .navbar ul {
@@ -70,21 +73,25 @@ footer{
   color: yellow;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease; /* Transición suave para hover */
+  transition: color 0.3s ease;
+  /* Transición suave para hover */
 }
 
 .navbar a:hover {
-  color: #fff; /* Cambio de color al pasar el mouse */
+  color: #fff;
+  /* Cambio de color al pasar el mouse */
 }
 
 .navbar .logo {
   width: 60px;
   margin-right: 10px;
-  transition: transform 0.3s ease; /* Efecto de escala al pasar el mouse */
+  transition: transform 0.3s ease;
+  /* Efecto de escala al pasar el mouse */
 }
 
 .navbar .logo:hover {
-  transform: scale(1.05); /* Pequeño zoom al interactuar */
+  transform: scale(1.05);
+  /* Pequeño zoom al interactuar */
 }
 
 .menu-toggle {
@@ -103,11 +110,16 @@ footer{
 
 /* Animación de fade-in */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-figure{
+figure {
   float: right;
 }
 
@@ -117,9 +129,10 @@ figure img {
   display: block;
   max-width: 100%;
   height: auto;
-  border-radius: 8px; /* Bordes redondeados para imágenes */
+  border-radius: 8px;
+  /* Bordes redondeados para imágenes */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
+
 }
 
 figure figcaption {
@@ -129,7 +142,7 @@ figure figcaption {
   text-align: center;
 }
 
-button{
+button {
   color: yellow;
   background-color: #1a5a1a;
   padding: 10px;
@@ -142,7 +155,7 @@ button{
   border-radius: 10px;
   padding: 20px;
   margin: 20px 100px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   animation: fadeIn 0.6s ease-out forwards;
   opacity: 0;
 }
@@ -187,8 +200,9 @@ button{
   background: linear-gradient(135deg, #1a5a1a, #3a9e3a);
   border-radius: 10px;
   padding: 20px;
-  width: 350px; /* Ancho fijo para consistencia */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 350px;
+  /* Ancho fijo para consistencia */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,7 +212,7 @@ button{
   opacity: 0;
   color: yellow;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+
 }
 
 
@@ -207,14 +221,15 @@ button{
 @media (hover: hover) and (pointer: fine) {
   .boton-info:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
 }
 
 .boton-info img {
   width: 100%;
   max-width: 300px;
-  height: 200px; /* Altura fija para consistencia */
+  height: 200px;
+  /* Altura fija para consistencia */
   border-radius: 8px;
   margin-bottom: 15px;
   object-fit: cover;
@@ -245,7 +260,7 @@ button{
   border-radius: 10px;
   padding: 20px;
   margin: 30px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .lista-plantas h2 {
@@ -275,7 +290,7 @@ button{
   width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .planta-info {
@@ -299,21 +314,102 @@ button{
   font-style: italic;
 }
 
+.fauna-card {
+  background: linear-gradient(135deg, #1a5a1a, #3a9e3a);
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #2e8b2e;
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
+  color: yellow;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fauna-card img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.fauna-card p {
+  margin: 10px 0 15px;
+  flex-grow: 1;
+  color: yellow;
+}
+
+.fauna-card b {
+  color: #fff;
+  font-weight: bold;
+}
+
+.tabla-mamiferos {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid yellow;
+}
+
+.tabla-mamiferos th {
+  background: linear-gradient(135deg, #1a5a1a, #3a9e3a);
+  color: yellow;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid yellow;
+}
+
+.tabla-mamiferos td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255, 255, 0, 0.3);
+}
+
+.tabla-mamiferos tr {
+  background: linear-gradient(135deg, rgba(26, 90, 26, 0.8), rgba(58, 158, 58, 0.8));
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+
+.tabla-mamiferos b {
+  color: yellow;
+  font-weight: bold;
+}
+
+/* Animación hover para fauna-card */
+@media (hover: hover) and (pointer: fine) {
+  .fauna-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+
 @media (max-width: 768px) {
-  h1{
+  h1 {
     font-size: 15px;
   }
 
-  h2{
+  h2 {
     font-size: 15px;
     text-align: left;
   }
 
-  body{
+  body {
     font-size: 10px;
   }
 
-  main{
+  main {
     padding: 10px;
     margin: 0 10px;
   }
@@ -333,18 +429,19 @@ button{
   }
 
   main {
-    margin: 0 20px; /* Menos margen en móviles */
+    margin: 0 20px;
+    /* Menos margen en móviles */
   }
 
   .biografia {
     margin: 20px 10px;
   }
-  
+
   .contenidoBiografia {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .imagenBiografia {
     width: 80px;
     height: 80px;
@@ -354,11 +451,11 @@ button{
     margin: 20px 10px;
     padding: 15px;
   }
-  
+
   .boton-info img {
     max-width: 200px;
   }
-  
+
   .boton-info p {
     font-size: 0.9rem;
   }
@@ -368,13 +465,14 @@ button{
     align-items: center;
     gap: 20px;
   }
-  
+
+
   .boton-info {
     width: 90%;
     max-width: 350px;
     margin: 0;
   }
-  
+
   .boton-info img {
     height: 150px;
   }
@@ -382,15 +480,36 @@ button{
   .planta {
     flex-direction: column;
   }
-  
+
   .planta-imagen {
     flex: 1 1 auto;
     margin-bottom: 15px;
   }
-  
+
   .lista-plantas {
     padding: 15px;
-  margin: 20px 0;
-  border-radius: 8px;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+
+  .fauna-card {
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto 20px;
+    padding: 15px;
+  }
+  
+  .fauna-card img {
+    max-width: 200px;
+    height: 150px;
+  }
+
+  .tabla-mamiferos {
+    font-size: 10px;
+  }
+  
+  .tabla-mamiferos th, 
+  .tabla-mamiferos td {
+    padding: 8px 6px;
   }
 }

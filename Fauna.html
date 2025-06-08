@@ -5,21 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fauna del cerro de Macuiltepetl</title>
-  <link rel="stylesheet" href="Estilos.css"/>
+  <link rel="stylesheet" href="Estilos.css" />
   <link rel="shortcut icon" href="imagenes/logoDelCerroDeMacuiltepetl.png" type="image/x-icon">
 </head>
 
-<body>
+<body onload="loadXMLDoc()">
   <header class="navbar" role="banner" aria-label="Cabecera de la página">
     <a href="index.html">
-      <img src="imagenes/logoDelCerroDeMacuiltepetl.png" alt="Logo del cerro de Macuiltepetl" class="logo" title="Clic para volver al menú principal"/>
+      <img src="imagenes/logoDelCerroDeMacuiltepetl.png" alt="Logo del cerro de Macuiltepetl" class="logo"
+        title="Clic para volver al menú principal" />
     </a>
     <button class="menu-toggle" aria-label="Mostrar menú" aria-expanded="false" onclick="desplegarMenu()">☰</button>
     <nav role="navigation" aria-label="Menú principal">
       <ul id="nav-list">
         <li><a href="index.html" aria-current="page">Inicio</a></li>
-        <li><a href="#">Flora</a></li>
-        <li><a href="#">Fauna</a></li>
+        <li><a href="Flora.html">Flora</a></li>
+        <li><a href="Fauna.html">Fauna</a></li>
       </ul>
     </nav>
   </header>
@@ -27,7 +28,55 @@
   <main>
     <h1>Fauna del cerro de Macuiltepetl</h1>
 
+    <p>El cerro de Macuiltepetl cuenta con una gran variedad de fauna local y migratoria, donde se pueden encontrar
+      mamíferos, aves, pequeños reptiles,
+      anfibios e innumerable cantidad de especies de insectos.</p>
+
+    <h2>Mamiferos del cerro de Macuiltepetl</h2>
+
+    <p>El cerro de Macuiltepetl, a pesar de su gran biodiversidad, se ve amenazado con la cantidad de especies de
+      mamíferos que va en declive.</p>
+
+    <blockquote
+      cite="https://www.redalyc.org/journal/425/42562784069/html/#:~:text=Los%20mam%C3%ADferos%20son%20el%20grupo,la%20ardilla%20(Sciurus%20aureogaster).">
+      "Los mamíferos son el grupo
+      con menor número de especies reportadas, con particular pobreza, mencionándose solo al tlacuache (Didelphis
+      marsupiales), el cacomixtle (Bassariscus astutus) y la ardilla
+      (Sciurus aureogaster). La escasez de especies de mamíferos podría ser en parte explicada por la abundancia de
+      perros y gatos que eliminan a una cantidad importante de fauna silvestre.
+      Por otro lado, no se encontraron publicaciones de inventarios sistematizados para este grupo." (Pavon 2019)
+    </blockquote>
+
+    <h3>¿Haz avistado a uno de los 3 mamíferos más representativos del Macuiltepetl?</h3>
+
     
+    <div class="fauna-card">
+      <img src="imagenes/tlacuache.jpg" alt="Imagen de tlacuache" title="Tlacuache (Didelphis marsupiales)">
+      <p><b>Tlacuache:</b> cola sin pelaje, pelaje oscuro, pelaje claro en cara y dedos, orejas y hocico grandes.</p>
+    </div>
+
+    <div class="fauna-card">
+      <img src="imagenes/cacomixtle2.jpg" alt="Imagen de cacomixtle" title="Cacomixtle (Bassariscus astutus)">
+      <p><b>Cacomixtle:</b> cola con pelaje negro con rayas blancas, pelaje gris amarillento o café oscuro, tamaño
+        parecido a un gato doméstico</p>
+    </div>
+
+    <div class="fauna-card">
+      <img src="imagenes/ardilla.jpg" alt="Imagen de ardilla gris mexicana"
+        title="Ardilla gris mexicana (Sciurus aureogaster)">
+      <p><b>Ardilla gris mexicana:</b> pelaje completamente gris y blanco con partes rojizas en abdomen y cabeza,
+        sociables y facilmente avistadas en la pista principal del cerro</p>
+    </div>
+
+    <p><b>Ayudanos enviando tu avistamiento para planificar de mejor manera su cuidado y preservación dentro del cerro
+        de Macuiltepetl</b>
+    </p>
+
+    <table id="tabla-mamiferos" class="tabla-mamiferos"></table>
+
+  </main>
+
+
 
   <footer>
     <address>

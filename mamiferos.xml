@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mamiferos>
+    <mamifero>
+        <nombrecientifico>Didelphis marsupiales</nombrecientifico>
+        <nombre>Tlacuache</nombre>
+        <avistamientos>12</avistamientos>
+    </mamifero>
+    <mamifero>
+        <nombrecientifico>Bassariscus astutus</nombrecientifico>
+        <nombre>Cacomixtle</nombre>
+        <avistamientos>6</avistamientos>
+    </mamifero>
+    <mamifero>
+        <nombrecientifico>Sciurus aureogaster</nombrecientifico>
+        <nombre>Ardilla gris mexicana</nombre>
+        <avistamientos>27</avistamientos>
+    </mamifero>
+</mamiferos>
