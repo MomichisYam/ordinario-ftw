@@ -447,15 +447,20 @@ button {
     margin: 0 10px;
   }
 
+  .navbar {
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+    justify-content: space-between; /* Separa logo y botón */
+    padding: 0.5rem 1rem;
+  }
+  
   .navbar ul {
     display: none;
     position: absolute;
     top: 100%;
-    /* Posiciona el menú justo debajo de la barra de navegación */
     left: 0;
+    right: 0;
     width: 100%;
     background: linear-gradient(to bottom, #1a5a1a, #2e8b2e);
-    /* Degradado vertical */
     flex-direction: column;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 0;
@@ -485,12 +490,17 @@ button {
 
   .menu-toggle {
     display: block;
-    z-index: 1001;
-    /* Asegura que esté sobre el menú desplegado */
+    order: 2; /* Coloca el botón al final (derecha) */
+    margin-left: auto; /* Empuja el botón a la derecha */
+    padding: 0.5rem;
   }
 
   .menu-toggle {
     display: block;
+  }
+
+   .navbar .logo {
+    margin-right: 0; /* Elimina el margen derecho del logo */
   }
 
   main {
