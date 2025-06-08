@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cerro de Macuiltepetl</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cerro de Macuiltepetl</title>
+  <link rel="stylesheet" href="Estilos.css"/>
 </head>
 <body>
+  <header class="navbar" role="banner" aria-label="Cabecera de la página">
+    <a href="index.html">
+      <img src="imagenes/logoDelCerroDeMacuiltepetl.png" alt="Logo del cerro de Macuiltepetl" class="logo"/>
+    </a>
+    <button class="menu-toggle" aria-label="Mostrar menú" aria-expanded="false" onclick="desplegarMenu()">☰</button>
+    <nav role="navigation" aria-label="Menú principal">
+      <ul id="nav-list">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="#">Flora</a></li>
+        <li><a href="#">Fauna</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
     <h1>Cerro de Macuiltepetl</h1>
-    <p>El cerro de Macuiltepetl es tal y tal cosa</p>
+
+    <figure>
+      <img src="imagenes/cerro1.png" alt="Vista aérea del cerro de Macuiltepetl">
+      <figcaption>Vista aérea del cerro de Macuiltepetl</figcaption>
+    </figure>
+
+    <p>El cerro de Macuiltepetl es un volcán extinto que hizo erupción hace más de 30 mil años, hoy en día, es un área natural protegida ubicada en la Colonia Progreso Macuiltepetl, Xalapa, Veracruz, México.<br></p>
     
+    <p>Se considera como un lugar de recreación para los Xalapeños, ya que a día de hoy cuenta con lugares para la recreación con toda la familia, que van desde una zona de parrillas, hasta una zona de juegos y aparatos deportivos</p>
+
+    <p>El cerro de Macuiltepetl también es sede de una variedad de eventos deportivos, ya que este cuenta con una pista de concreto y una pista de tierra que tiene un recorrido mucho más largo.</p>
+
+    <p>Se considera como (A) C (fm) Semicálido-húmedo: temperatura media anual entre 18 y 22 grados centígrados y la del mes más frío inferior a 18 grados centígrados. La lluvia es abundante en todo el año, teniendo el mes más seco una precipitación mayor a 40 mm y en el porciento de lluvia invernal es menor a 18.</p>
+
+  <h2>Conoce más sobre el cerro de Macuiltepetl</h2>
+
+  <button>Flora</button>
+  <button>Fauna</button>
+    
+  </main>
+
+  <footer>
+    <address>jeshuayam</address>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

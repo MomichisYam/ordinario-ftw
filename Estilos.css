@@ -1,0 +1,147 @@
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: justify;
+  font-size: 20px;
+  /* Degradado vertical de verde oscuro a verde más claro */
+  background: linear-gradient(to bottom, #2a4e0e, #4a7a1f);
+  padding-top: 70px;
+  min-height: 100vh; /* Asegura que el degradado cubra toda la pantalla */
+}
+
+main{
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  margin: 0 100px;
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para mejor contraste */
+}
+
+footer{
+  margin-top: 20px;
+  /* Degradado diagonal que combina con la navbar */
+  background: linear-gradient(135deg, #1e7a1e, #3a9e3a);
+  color: yellow;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Degradado horizontal de verde oscuro a verde claro */
+  background: linear-gradient(to right, #1a5a1a, #2e8b2e);
+  color: yellow;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2); /* Sombra para profundidad */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Transición suave para hover */
+}
+
+.navbar a:hover {
+  color: #fff; /* Cambio de color al pasar el mouse */
+}
+
+.navbar .logo {
+  width: 60px;
+  margin-right: 10px;
+  transition: transform 0.3s ease; /* Efecto de escala al pasar el mouse */
+}
+
+.navbar .logo:hover {
+  transform: scale(1.05); /* Pequeño zoom al interactuar */
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: yellow;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Animación de fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+figure{
+  float: right;
+}
+
+/* Aplicar la animación a las imágenes dentro de figure */
+figure img {
+  animation: fadeIn 1.5s ease-in-out;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados para imágenes */
+  
+}
+
+figure figcaption {
+  animation: fadeIn 2s ease-in-out;
+  margin-top: 8px;
+  font-style: italic;
+  text-align: center;
+}
+
+button{
+  color: yellow;
+  background-color: #1a5a1a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  main {
+    margin: 0 20px; /* Menos margen en móviles */
+  }
+}
