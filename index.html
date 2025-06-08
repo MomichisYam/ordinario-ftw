@@ -5,13 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cerro de Macuiltepetl</title>
-  <link rel="stylesheet" href="Estilos.css" />
+  <link rel="stylesheet" href="Estilos.css"/>
+  <link rel="shortcut icon" href="imagenes/logoDelCerroDeMacuiltepetl.png" type="image/x-icon">
 </head>
 
 <body>
   <header class="navbar" role="banner" aria-label="Cabecera de la página">
     <a href="index.html">
-      <img src="imagenes/logoDelCerroDeMacuiltepetl.png" alt="Logo del cerro de Macuiltepetl" class="logo" />
+      <img src="imagenes/logoDelCerroDeMacuiltepetl.png" alt="Logo del cerro de Macuiltepetl" class="logo" title="Clic para volver al menú principal"/>
     </a>
     <button class="menu-toggle" aria-label="Mostrar menú" aria-expanded="false" onclick="desplegarMenu()">☰</button>
     <nav role="navigation" aria-label="Menú principal">
@@ -52,7 +53,7 @@
        <div class="boton-info">
         <img src="imagenes/acahual.jpg" alt="Acahual, vegetación típica del cerro" title="Flora del cerro">
         <p>Descubre la variedad de flora del cerro de Macuiltepetl</p>
-        <button title="Clic en el botón para ver la página de flora">Ver más sobre la flora</button>
+        <button title="Clic en el botón para ver la página de flora" onclick="cambiarAFlora()">Ver más sobre la flora</button>
       </div>
 
       <div class="boton-info">

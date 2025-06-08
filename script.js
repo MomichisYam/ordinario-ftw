@@ -8,3 +8,7 @@ function desplegarMenu() {
       button.setAttribute("aria-expanded", !expanded);
       navList.classList.toggle("show");
     }
+
+function cambiarAFlora(){
+    window.location.replace("Flora.html")
+}
