@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flora</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flora del cerro de Macuiltepetl</title>
+  <link rel="stylesheet" href="Estilos.css" />
+  <link rel="shortcut icon" href="imagenes/logoDelCerroDeMacuiltepetl.png" type="image/x-icon">
 </head>
+
 <body>
-    se supone que aqui pongo la flora
+  <header class="navbar" role="banner" aria-label="Cabecera de la página">
+    <a href="index.html">
+      <img src="imagenes/logoDelCerroDeMacuiltepetl.png" alt="Logo del cerro de Macuiltepetl" class="logo"
+        title="Clic para volver al menú principal" />
+    </a>
+    <button class="menu-toggle" aria-label="Mostrar menú" aria-expanded="false" onclick="desplegarMenu()">☰</button>
+    <nav role="navigation" aria-label="Menú principal">
+      <ul id="nav-list">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="Flora.html">Flora</a></li>
+        <li><a href="#">Fauna</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Flora del cerro de Macuiltepetl</h1>
+    <p>El cerro de Macuiltepetl cuenta con una gran variedad de flora, siendo designado como "Bosque mesófilo de
+      montaña", cabe recordar que, el cerro de macuiltepetl se encuentra en la zona de Xalapa Enriquez, siendo una zona altamente urbana, por lo que generalmente, la flora se ve amenazada
+      por actividad humana,la exploración del bosque se presenta en distintas modalidades como la extracción de tierra, leña y
+      fustes para construcciones rústicas así como cacería y captura de animales silvestres.</p>
+
+    <article class="lista-plantas">
+      <h2>Especies vegetales representativas</h2>
+
+      <section class="planta">
+        <div class="planta-imagen">
+          <img src="imagenes/clethra_mexicana.jpeg" alt="Mamojuaxtle">
+        </div>
+        <div class="planta-info">
+          <h3>Mamojuaxtle</h3>
+          <p><strong>Nombre científico:</strong> <em>Clethra mexicana</em></p>
+          <p><strong>Familia:</strong> Clethraceae</p>
+          <p><strong>Descripción:</strong> Árbol perennifolio de 8–15 m (puede alcanzar hasta 25 m), con flores
+            racimosas blancas. Es frecuente en claros del bosque mesófilo de montaña y zonas alteradas, y es una especie
+            nativa característica del Cerro de Macuiltepetl.</p>
+        </div>
+      </section>
+
+      <section class="planta">
+        <div class="planta-imagen">
+          <img src="imagenes/oreopanax_xalapensis.jpg" alt="Macuilillo">
+        </div>
+        <div class="planta-info">
+          <h3>Macuilillo</h3>
+          <p><strong>Nombre científico:</strong> <em>Oreopanax xalapensis</em></p>
+          <p><strong>Familia:</strong> Araliaceae</p>
+          <p><strong>Descripción:</strong> Árbol mediano de hasta 18 m, con hojas grandes lobuladas (5–9 foliolos).
+            Presenta inflorescencias en panículas y frutos en baya. Nativo del bosque mesófilo, es típico de áreas altas
+            como el Macuiltepetl.</p>
+        </div>
+      </section>
+
+      <section class="planta">
+        <div class="planta-imagen">
+          <img src="imagenes/liquidambar_macrophylla.jpg" alt="Liquidámbar">
+        </div>
+        <div class="planta-info">
+          <h3>Liquidámbar</h3>
+          <p><strong>Nombre científico:</strong> <em>Liquidambar macrophylla</em></p>
+          <p><strong>Familia:</strong> Altingiaceae</p>
+          <p><strong>Descripción:</strong> Árbol caducifolio de hojas grandes, en forma de estrella. Se encuentra en el
+            bosque mesófilo de montaña del Cerro. Representa una de las especies arbóreas nativas destacadas del parque.
+          </p>
+        </div>
+      </section>
+
+      <section class="planta">
+        <div class="planta-imagen">
+          <img src="imagenes/quercus_calophylla.jpg" alt="Encino">
+        </div>
+        <div class="planta-info">
+          <h3>Encino</h3>
+          <p><strong>Nombre científico:</strong> <em>Quercus calophylla</em></p>
+          <p><strong>Familia:</strong> Fagaceae</p>
+          <p><strong>Descripción:</strong> Árbol robusto de 8–25 m, con hojas rígidas y puntiagudas. Es una de las
+            especies dominantes del rodal de encinos del Cerro y parte integral del bosque en restauración.</p>
+        </div>
+      </section>
+
+      <section class="planta">
+        <div class="planta-imagen">
+          <img src="imagenes/piper_auritum.jpg" alt="Acuyo">
+        </div>
+        <div class="planta-info">
+          <h3>Acuyo</h3>
+          <p><strong>Nombre científico:</strong> <em>Piper auritum</em></p>
+          <p><strong>Familia:</strong> Piperaceae</p>
+          <p><strong>Descripción:</strong> Planta herbácea o arbustiva con hojas grandes aromáticas. Crece en zonas
+            sombreadas del bosque mesófilo y es común en el sotobosque del Macuiltepetl.</p>
+        </div>
+      </section>
+
+    </article>
+
+
+
+  </main>
+
+  <footer>
+    <address>
+      <p>Cerro de Macuiltepetl, Xalapa, Veracruz, México</p>
+      <p>Email: <a href="mailto:contacto@macuiltepetl.org">contacto@macuiltepetl.org</a></p>
+      <p>Teléfono: <a href="tel:+522282000000">228 200 0000</a></p>
+    </address>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

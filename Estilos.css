@@ -1,7 +1,13 @@
 h1 {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
   font-size: 50px;
-  
+  border-bottom: 2px solid #2e8b2e;
+  padding: 10px;
+}
+
+h2{
+  padding: 10px;
+  border-bottom: 2px solid #2e8b2e;
 }
 
 body {
@@ -192,6 +198,7 @@ button{
   opacity: 0;
   color: yellow;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 
@@ -231,6 +238,65 @@ button{
 
 .boton-info button:hover {
   background-color: #3a9e3a;
+}
+
+.lista-plantas {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.lista-plantas h2 {
+  color: #1a5a1a;
+  border-bottom: 2px solid #2e8b2e;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.planta {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.planta:last-child {
+  border-bottom: none;
+}
+
+.planta-imagen {
+  flex: 0 0 250px;
+}
+
+.planta-imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.planta-info {
+  flex: 1;
+}
+
+.planta-info h3 {
+  color: #2a4e0e;
+  margin-top: 0;
+}
+
+.planta-info p {
+  margin: 8px 0;
+}
+
+.planta-info strong {
+  color: #1a5a1a;
+}
+
+.planta-info em {
+  font-style: italic;
 }
 
 @media (max-width: 768px) {
@@ -311,5 +377,20 @@ button{
   
   .boton-info img {
     height: 150px;
+  }
+
+  .planta {
+    flex-direction: column;
+  }
+  
+  .planta-imagen {
+    flex: 1 1 auto;
+    margin-bottom: 15px;
+  }
+  
+  .lista-plantas {
+    padding: 15px;
+  margin: 20px 0;
+  border-radius: 8px;
   }
 }

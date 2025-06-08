@@ -9,6 +9,16 @@ function desplegarMenu() {
       navList.classList.toggle("show");
     }
 
+/**
+ * Función para redirigir a la página de Flora
+ */
 function cambiarAFlora(){
     window.location.replace("Flora.html")
+}
+
+/**
+ * Función para redirigir a la página de Fauna
+ */
+function cambiarAFauna(){
+    window.location.replace("Fauna.html")
 }
